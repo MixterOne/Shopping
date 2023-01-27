@@ -16,7 +16,7 @@ body{
 }
 
 .container .menu{
-    width: 60%;
+    width: 80%;
 }
 
 .container .menu .header{
@@ -68,14 +68,33 @@ body{
 .container .products{
     height: 300px;
     margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.container .products::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 8px;
+}
+
+.container .products::-webkit-scrollbar-track{
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+}
+
+.container .products::-webkit-scrollbar-thumb{
+    background-color: rgba(247, 74, 74, 0.377);
+    border-radius: 12px;
 }
 
 .container .products .product{
-    height: 280px;
+    height: 290px;
     width: 250px;
     background-color: rgb(34, 34, 34);
     border-radius: 12px;
     padding: 2%;
+    margin: 1%;
 }
 
 .container .products .product .image{
@@ -87,3 +106,113 @@ body{
 .container .products .product .image img{
     width: 100%;
 }
+
+.container .products .product .title{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 5%;
+    height: 70px;
+    overflow: hidden;
+}
+
+.container .products .product .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .products .product .price{
+    color: #fff;
+}
+
+.container .products .product .cart{
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+.container .products .product .cart i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/**************
+OrderProduct
+***************/
+
+.orders .header h2{
+    color: aliceblue;
+}
+
+.orders .header p{
+    color: #b8b8b8;
+}
+
+.orders .orderdproducts {
+    margin-top: 5%;
+    height: 300px;
+    width: 420px;
+    overflow-y: auto;
+}
+
+.orders .orderdproducts .tenis{
+    height: 80px;
+    width: 400px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.orders .orderdproducts .tenis .icon{
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+
+.orders .orderdproducts .tenis .icon img{
+    width: 130%;
+}
+
+.orders .orderdproducts .tenis .title{
+    font-size: 0.8rem;
+}
+
+.orders .orderdproducts .tenis .title h1{
+    color: #b8b8b8;
+    width: 250px;
+    overflow: hidden;
+}
+
+.orders .orderdproducts .tenis .title p{
+    color: #fff;
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+.orders .orderdproducts .tenis .delete i{
+    font-size: 2rem;
+    color: rgba(255, 61, 61, 0.637);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
